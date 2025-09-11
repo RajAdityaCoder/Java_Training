@@ -4,7 +4,7 @@ public class Variables {
     public static void main(String[] args) {
         int number = 5;
         System.out.println("Number: " + number);
-        final double PI = 3.14;
+        final double PI = 3.141592653589793;
         System.out.println("PI: " + PI);
         byte b = 10;
         System.out.println("Byte: " + b);
@@ -14,7 +14,7 @@ public class Variables {
         System.out.println("Long: " + l);
         float f = 10.5F;
         System.out.println("Float: " + f);
-        double d = 10.5;
+        double d = 10.521456789;
         System.out.println("Double: " + d);
         char c = 'A';
         System.out.println("Char: " + c);
