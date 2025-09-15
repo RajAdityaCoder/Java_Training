@@ -10,20 +10,16 @@ class BankAccount {
 
     public BankAccount(String accountNumber, String accountHolderName, double balance, String accountType, boolean isActive, int pin) {
         if (accountNumber == null || accountNumber.length() < 8) {
-            System.out.println("Invalid account number");
-            return;
+            throw new IllegalArgumentException("Invalid account number");
         }
         if (accountHolderName == null || accountHolderName.trim().isEmpty()) {
-            System.out.println("Invalid account holder name");
-            return;
+            throw new IllegalArgumentException("Invalid account holder name");
         }
         if (balance < 0) {
-            System.out.println("Invalid balance");
-            return;
+            throw new IllegalArgumentException("Invalid balance");
         }
         if (pin < 1000 || pin > 9999) {
-            System.out.println("pin must be 4 digits");
-            return;
+            throw new IllegalArgumentException("pin must be 4 digits");
         }
         this.accountNumber = accountNumber;
         this.accountHolderName = accountHolderName;
@@ -42,14 +38,32 @@ class BankAccount {
         System.out.println("Pin: " + pin);
     }
 
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public String getAccountType() {
+        return accountType;
+    }
+
+    public boolean getIsActive() {
+        return isActive;
+    }
+
+    public int getPin() {
+        return pin;
+    }
+
     public static void main(String[] args) {
-        String accountNumber = "12345678";
-        String accountHolderName = "Adi";
-        double balance = 10000;
-        String accountType = "Savings";
-        boolean isActive = true;
-        int pin = 1234;
-        BankAccount obj = new BankAccount(accountNumber, accountHolderName, balance, accountType, isActive, pin);
+        BankAccount obj = new BankAccount("12345678", "Aditya Raj Chaudhary", 10000, "Savings", true, 1234);
         obj.displayDetails();
     }
 }
