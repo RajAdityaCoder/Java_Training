@@ -63,7 +63,7 @@ class BankAccount {
     }
 
     public static void main(String[] args) {
-        BankAccount obj = new BankAccount("12345678", "Aditya Raj Chaudhary", 10000, "Savings", true, 1234);
-        obj.displayDetails();
+        BankAccount obj = new BankAccount("ACC12345", "Aditya Raj Chaudhary", 10000, "Savings", true, 1234);
+        System.out.println("Account Number: " + obj.getAccountNumber());
     }
 }
