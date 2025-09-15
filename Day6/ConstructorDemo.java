@@ -1,5 +1,5 @@
 
-public class ConstructorStudent {
+public class ConstructorDemo {
 
     public static void main(String[] args) {
         System.out.println("=======Student Details:=========");
