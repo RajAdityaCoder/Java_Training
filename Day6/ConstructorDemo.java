@@ -2,14 +2,18 @@
 public class ConstructorDemo {
 
     public static void main(String[] args) {
-        System.out.println("=======Student Details:=========");
+        System.out.println("==========Student Details:=========");
+        System.out.println("Default Constructor:");
         Student obj = new Student();
         obj.displayDetails();
+        System.out.println("Parameterized Constructor:");
         Student obj1 = new Student(102, "Amit", 21, 85);
         obj1.displayDetails();
-        System.out.println("=======Teacher Details:=========");
+        System.out.println("==========Teacher Details:=========");
+        System.out.println("Default Constructor:");
         Teacher obj2 = new Teacher();
         obj2.displayDetails();
+        System.out.println("Parameterized Constructor:");
         Teacher obj3 = new Teacher(104, "Anu", 31, "Pune", "Science", 60000);
         obj3.displayDetails();
 
