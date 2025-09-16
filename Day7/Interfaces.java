@@ -31,6 +31,10 @@ class Cat implements Animal {
         System.out.println("Cat is sleeping");
     }
 
+}
+
+public class Interfaces {
+
     public static void main(String[] args) {
         Animal dog = new Dog();
         dog.eat();
