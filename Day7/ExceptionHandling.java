@@ -8,9 +8,10 @@ public class ExceptionHandling {
         int a = sc.nextInt();
         try {
             int c = a / 0;
-            System.out.println(c);
         } catch (ArithmeticException e) {
             System.out.println("You can't divide by zero");
+        } finally {
+            System.out.println(c);
         }
     }
 }
